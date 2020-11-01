@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Learn bootstrap 4</title>
+  </head>
+
+  <body>
+    <div class="container" style="margin-top: 30px;">
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-primary align-items-center"
+      >
+        <a class="navbar-brand" href="#">La maison de l'architecte</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#arch"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="arch">
+          <div class="navbar-nav ml-auto" role="navigation">
+            <a class="nav-item nav-link" href="#">Réalisations</a>
+            <a class="nav-item nav-link" href="#">Projets</a>
+            <a class="nav-item nav-link" href="views/navside.html">Ambition</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-center my-4">
+        Learn to ship software like a pro
+      </h1>
+      <div class="row">
+        <div class="col-md">
+          <p class="lead">
+            There's no substitute for hands on experience. But for most
+            students, real word tools can be cost-prohibitive.
+          </p>
+          <p>
+            That's why we created Github Developer Pack with some of our
+            partners and friends: to give students free access to the best
+            developer tools in one place so they can learn by doing.
+          </p>
+        </div>
+
+        <div class="col-md alert alert-default">
+          <div class="row">
+            <div class="col col-sm-4 col-md-12">
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#test"
+              >
+                Get the Pack
+              </button>
+              <div class="modal modal-centered" id="test">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5>GitHub Student Pack</h5>
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      Lorem ipsum dolor amet
+                    </div>
+
+                    <div class="modal-footer text-right">
+                      <button class="btn">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-8 col-md-12 mt-md-4">
+              <p>
+                Before you receive access to the offers, we'll need to
+                <a href="#">verify that you are student</a>.
+              </p>
+              <p>
+                Teachers, researhers, faculty and staff are not eligibe for the
+                pack, but can
+                <a href="#">get free and discounted access to GitHub</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          data-toggle="dropdown"
+          href="dd"
+        >
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dd">
+          <li class="dropdown-item">Action</li>
+          <li class="dropdown-item">Another Action</li>
+          <li class="dropdown-item">Something else here</li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item clearfix">
+              Item 1<span class="badge badge-warning float-right">88</span>
+            </li>
+            <li class="list-group-item">Item 2</li>
+            <li class="list-group-item">Item 3</li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <a class="btn btn-light collapse-toogle" href="#nav" role="button" data-toggle="collapse">Menu</a>
+          <div class="collapse" id="nav">
+            
+            <nav class="nav nav-tabs flex-md-column dropright">
+              <a class="nav-item nav-link">Home</a>
+              <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown"
+                >Projects</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tribute Page</a>
+                <a class="dropdown-item" href="#">Survey Form</a>
+                <a
+                  class="dropdown-item"
+                  href="https://fleuronvilik.github.io/tech-docs/"
+                  target="_blank"
+                  >Technical Docs</a
+                >
+              </div>
+              <a class="nav-item nav-link">About Me</a>
+              <a class="nav-item nav-link disabled">Contact</a>
+            </nav>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

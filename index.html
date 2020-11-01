@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+      table {width: 100%;}
+    </style>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-1">
+        Budget App
+      </h1>
+      
+      <aside>
+        <h2 class="title is-2">Status</h2>
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-3">Budget</h3>
+            <div class="is-size-3">$ <span>0</span></div>
+          </div>
+          
+          <div class="column">
+            <h3 class="title is-3">Expenses</h3>
+            <div class="is-size-3">$ <span>0</span></div>
+          </div>
+          
+          <div class="column">
+            <h3 class="title is-3">Balance</h3>
+            <div class="is-size-3">$ <span>0</span></div>
+          </div>
+        </div>
+      </aside> 
+      
+       <section class="columns">
+        <form class="form column" id="budget-form">
+          <div class="field">
+            <label class="label">Please Enter Your Budget</label>
+            <div class="control">
+              <input class="input" type="number" required>
+            </div>
+          </div>
+
+          <div class="control">
+            <button class="button is-link" type="submit">Calculate</button>
+          </div>
+        </form>
+        
+        <form class="form column" id="expense-form">
+          <div class="field">
+            <label class="label">Please Enter Your Expense</label>
+            <div class="control">
+              <input class="input" type="text" required>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Please Enter Your Amount</label>
+            <div class="control">
+              <input class="input" type="number" required>
+            </div>
+          </div>
+
+          <div class="control">
+            <button class="button is-link" type="submit">Add Expense</button>
+          </div>
+        </form>
+      </section>
+      
+      <table class="table">
+        <thead>
+          <td>Title</td>
+          <td>Amount</td>
+          <td>Edit - Delete</td>
+        </thead>
+      </table>
+    </div>
+  </section>
+  <script src="budget.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
